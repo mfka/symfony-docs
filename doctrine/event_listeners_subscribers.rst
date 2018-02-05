@@ -170,7 +170,7 @@ interface and have an event method for each event it subscribes to::
 
             // perhaps you only want to act on some "Product" entity
             if ($entity instanceof Product) {
-                $entityManager = $args->getEntityManager();
+                $entityManager = $args->getObjectManager();
                 // ... do something with the Product
             }
         }
